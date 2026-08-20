@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables
+.env
+.env.local
+server/.env
+client/.env
+
+# Build output
+client/dist/
+server/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Vite cache
+client/.vite/

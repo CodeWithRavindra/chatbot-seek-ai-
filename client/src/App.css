@@ -1,0 +1,15 @@
+.scaffold-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.scaffold-screen h1 {
+  font-size: 2rem;
+  margin: 0;
+}
