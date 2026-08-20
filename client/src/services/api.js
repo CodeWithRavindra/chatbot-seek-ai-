@@ -3,7 +3,7 @@
 // keeping it here means we only change one file if the backend URL,
 // auth header, or error handling strategy ever changes.
 
-const BASE_URL = '/api'; // proxied to the Express server in dev (see vite.config.js)
+const BASE_URL = import.meta.env.VITE_API_URL || '/api'; // proxied in dev, or points to external backend in production
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
