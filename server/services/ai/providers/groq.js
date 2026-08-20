@@ -19,7 +19,7 @@ class GroqProvider {
 
   async sendMessage(messages, options = {}) {
     const {
-      model = 'llama-3.3-70b-versatile',
+      model = 'openai/gpt-oss-20b',
       temperature = 0.7,
       maxTokens = 2000,
     } = options;
@@ -46,7 +46,7 @@ class GroqProvider {
   async validateApiKey() {
     try {
       await this.client.post('/chat/completions', {
-        model: 'llama-3.3-70b-versatile',
+        model: 'openai/gpt-oss-20b',
         messages: [{ role: 'user', content: 'test' }],
         max_tokens: 5,
       });
